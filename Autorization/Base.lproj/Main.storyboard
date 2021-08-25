@@ -90,7 +90,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="eaY-zk-b9A">
+                            <stackView opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="eaY-zk-b9A">
                                 <rect key="frame" x="34" y="249" width="346" height="363"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Welcome, Constantine!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RZ5-3v-8so">
@@ -118,7 +118,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uIr-9e-ytT"/>
-                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="eaY-zk-b9A" firstAttribute="leading" secondItem="uIr-9e-ytT" secondAttribute="leading" constant="34" id="2iT-kw-njr"/>
                             <constraint firstItem="eaY-zk-b9A" firstAttribute="top" relation="lessThanOrEqual" secondItem="uIr-9e-ytT" secondAttribute="top" constant="205" id="Meq-ZY-rJM"/>
@@ -128,6 +128,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="vxU-nZ-2yJ"/>
                     <connections>
+                        <outlet property="elementsStackView" destination="eaY-zk-b9A" id="Ofe-tr-WYT"/>
                         <outlet property="welcomeMessageLabel" destination="RZ5-3v-8so" id="H1S-qi-2jN"/>
                     </connections>
                 </viewController>
@@ -158,9 +159,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
