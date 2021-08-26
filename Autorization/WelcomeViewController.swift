@@ -11,9 +11,9 @@ import UIKit
 class WelcomeViewController: UIViewController {
 
     @IBOutlet var welcomeMessageLabel: UILabel!
+    @IBOutlet var elementsStackView: UIStackView!
     
     var welcomeMessage: String!
-    @IBOutlet var elementsStackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

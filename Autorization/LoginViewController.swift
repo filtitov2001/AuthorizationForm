@@ -45,8 +45,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             userNameText.resignFirstResponder()
             passwordText.becomeFirstResponder()
         case passwordText:
-            logInAction()
             passwordText.resignFirstResponder()
+            logInAction()
         default:
             textField.resignFirstResponder()
         }
@@ -71,7 +71,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             return
         }
         
-        guard let inputPassword = passwordText.text else {
+        guard let inputPassword = passwordText.text, !inputPassword.isEmpty else {
             showAlert(
                 with: "Text field is emplty!",
                 and: "Input your User name and password"
