@@ -2,7 +2,8 @@
 //  ViewController.swift
 //  Autorization
 //
-//  Created by Феликс Титов on 25.08.2021.
+//  Created by Felix Titov on 25.08.2021.
+//  Copyright © 2021 by Felix Titov. All rights reserved.
 //
 
 import UIKit
