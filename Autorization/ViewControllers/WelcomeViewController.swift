@@ -13,19 +13,13 @@ class WelcomeViewController: UIViewController {
     @IBOutlet var welcomeMessageLabel: UILabel!
     @IBOutlet var elementsStackView: UIStackView!
     
-    var welcomeMessage: String!
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeMessageLabel.text = welcomeMessage
+        welcomeMessageLabel.text = "Welcome, \(user.person.fullName)!"
         
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = view.bounds
-        gradientLayer.colors = [
-            UIColor.systemPink.cgColor,
-            UIColor.blue.cgColor
-        ]
-        view.layer.addSublayer(gradientLayer)
+        view.addVerticalGradienLayer()
         
         view.bringSubviewToFront(elementsStackView)
         
