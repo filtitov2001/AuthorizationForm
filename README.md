@@ -1,6 +1,6 @@
 # Authorization Form
 
-This app is Login screnn with auth form. Created for training with UITabBarController and Nav Controller.
+This app is Login screen with auth form using MVC. Created for training with UITabBarController and Navigation Controller.
 In app you can see a little info about me.🤳🏼🙋🏻‍♂️
 
 <div align="center">
